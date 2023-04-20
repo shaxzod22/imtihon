@@ -1,0 +1,61 @@
+@use './../variables';
+@use './../mixins';
+
+// starting
+.starting{
+    background-image: url(./../../img/first-pet-bg.png),url(./../../img/first-parrot-bg.png);
+    background-repeat: no-repeat;
+    background-position: top left ,bottom right;
+    background-size: 600px 650px, 246px 428px;
+    padding-bottom: 26px;
+    
+    &__container{
+        padding: 145px 97px 0 737px;
+    }
+    
+    &__wrapper{
+        max-width: 608px;
+        padding-bottom: 238px;
+        margin: 0 auto;
+    }
+    
+    &__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 64px;
+        color: variables.$primary-color;
+        margin-bottom: 29px;
+        
+        &__seperate{
+            color: variables.$fourth-color;
+        }
+    }
+    
+    &__text{
+        color: variables.$text-color;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        margin-bottom: 38px;
+        max-width: 495px;
+    }
+    
+    &__btn{
+        padding: 15px 48px;
+        font-style: normal;
+        font-weight: 500;
+        color: variables.$secondary-color;
+        line-height: 21px;
+        background-color: variables.$primary-color;
+        
+        &:hover{
+            background-color: variables.$third-color;
+            color: variables.$primary-color;
+        }
+        
+        &:active{
+            opacity: 0.6;
+        }
+    }
+}

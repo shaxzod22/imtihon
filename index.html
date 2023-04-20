@@ -1,19 +1,663 @@
 <!DOCTYPE html>
-<html lang="eng">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="G'afforov Shaxzod">
-    <meta name="description" content="site about veterinary clinic">
-    <meta name="keywords" content="clinic veterinary animals">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width ,initial-scale=1"/> 
-    <meta property="og:title" content="Veterinary clinic">
-    <meta property="og:description" content="site about veterinary clinic">
-    <meta propery="og:image" content="https://imageio.forbes.com/specials-images/dam/imageserve/1068867780/960x0.jpg?format=jpg&width=960">
-    <link rel="stylesheet" href="./css/main.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="G'afforov Shaxzod" />
+    <meta name="description" content="site about veterinary clinic" />
+    <meta name="keywords" content="clinic veterinary animals" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width ,initial-scale=1" />
+    <meta property="og:title" content="Veterinary clinic" />
+    <meta property="og:description" content="site about veterinary clinic" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Veterinary clinic</title>
-</head>
-<body>
- 
-</body>
+  </head>
+  <body>
+    <h1 class="visually-hidden">Site about veterinary clinic</h1>
+
+    <header class="header">
+      <div class="header__wrapper-up__container">
+        <div class="header__wrapper-up">
+          <a
+            class="header__map__link"
+            target="_blank"
+            href="https://goo.gl/maps/qVb3yCnBHhFX7qfX6"
+          >
+            <img
+              src="./img/homesvg.svg"
+              alt="home img"
+              class="header__location-img"
+              width="14"
+              height="13"
+            />
+            г. Мариуполь, проспект Победы, 48а
+          </a>
+
+          <ul class="header__list__tel">
+            <li class="header__item-img">
+              <img
+                src="./img/phonesvg.svg"
+                alt="phone img"
+                class="header__phone__img"
+                width="13"
+                height="13"
+              />
+            </li>
+
+            <li class="header__item-number">
+              <a class="header__phone__link" href="tel:+0676347574"
+                >(067) 634 -75 - 74</a
+              >
+            </li>
+
+            <li class="header__item-dote"></li>
+
+            <li class="header__item-number">
+              <a class="header__phone__link" href="tel:+0637570131"
+                >(0637) 57 - 01 - 31</a
+              >
+            </li>
+
+            <li class="header__item-dote"></li>
+
+            <li class="header__item-number">
+              <a class="header__phone__link" href="tel:+0982664389"
+                >(098) 266 - 43 - 89</a
+              >
+            </li>
+          </ul>
+
+          <div class="header__date-box">
+            <img
+              src="./img/schedulesvg.svg"
+              alt="schedule icon"
+              class="header__date__img"
+              width="14"
+              height="14"
+            />
+
+            <ul class="header__schedule-list">
+              <li class="header__schedule-item">Пн - Пт 8:00 - 18:00</li>
+              <li class="header__schedule-item">Сб - Вс 8:00 - 14:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__wrapper-down__container">
+        <div class="header__wrapper-down">
+          <a href="./index.html" class="header__logo__link">
+            <img
+              src="./img/vet-logo.svg"
+              alt="logo"
+              class="header__logo__img"
+              width="177"
+              height="86"
+            />
+          </a>
+
+          <div class="header__navbar">
+            <ul class="header__nav__list">
+              <li class="header__nav__item">
+                <img
+                  src="./img/fish-svg.svg"
+                  alt="fish icon"
+                  class="header__fish--default"
+                  width="14"
+                  height="14"
+                />
+
+                <a class="header__navbar__Link" href="/">Главная</a>
+              </li>
+              <li class="header__nav__item">
+                <img
+                  src="./img/fish-svg.svg"
+                  alt="fish icon"
+                  class="header__fish header__fish--none"
+                  width="14"
+                  height="14"
+                />
+
+                <a class="header__navbar__Link" href="/">О Клинике</a>
+              </li>
+              <li class="header__nav__item">
+                <img
+                  src="./img/fish-svg.svg"
+                  alt="fish icon"
+                  class="header__fish header__fish--none"
+                  width="14"
+                  height="14"
+                />
+
+                <a class="header__navbar__Link" href="/">Наши Услуги</a>
+              </li>
+              <li class="header__nav__item">
+                <img
+                  src="./img/fish-svg.svg"
+                  alt="fish icon"
+                  class="header__fish header__fish--none"
+                  width="14"
+                  height="14"
+                />
+
+                <a class="header__navbar__Link" href="/">Полезные Статьи</a>
+              </li>
+              <li class="header__nav__item">
+                <img
+                  src="./img/fish-svg.svg"
+                  alt="fish icon"
+                  class="header__fish header__fish--none"
+                  width="14"
+                  height="14"
+                />
+
+                <a class="header__navbar__Link" href="/">FAQ</a>
+              </li>
+              <li class="header__nav__item">
+                <img
+                  src="./img/fish-svg.svg"
+                  alt="fish icon"
+                  class="header__fish header__fish--none"
+                  width="14"
+                  height="14"
+                />
+
+                <a class="header__navbar__Link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="header__btn">
+            <img
+              src="./img/paw.svg"
+              alt="paw icon"
+              class="header__paw-img"
+              width="23"
+              height="23"
+            />
+            Задать вопрос
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="hero">
+      <section class="starting">
+        <div class="starting__container">
+          <div class="starting__wrapper">
+            <h2 class="starting__heading">
+              Мы заботимся о
+              <span class="starting__heading__seperate">ваших питомцах!</span>
+            </h2>
+
+            <p class="starting__text">
+              Вам и Вашему любимцу множество услуг по диагностике, профилактике
+              заболеваний по лечению и уходу за Вашими животными. Профессионалы
+              работающие в нашей клинике сделают все для того, чтобы быстро,
+              эффективно и максимально безболезненно выполнить любие процедуры,
+              которые необходимы Вашему домашнему любимцу.
+            </p>
+
+            <button class="starting__btn btn">Наши услуги</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="opinion">
+        <div class="opinion__container">
+          <div class="opinion__wrapper">
+            <h3 class="visually-hidden">it is opinion</h3>
+            <div class="opinion__line"></div>
+
+            <p class="opinion__title">
+              Наша ветеринарная клиника готова уделить максимум внимания Вам и
+              Вашему питамцу. Здоровье и благополучие Ваших животных очень важно
+              для нас и мы стремимся оказать наилучшую возможную ветеринарную
+              помощь.
+            </p>
+
+            <div class="opinion__line"></div>
+
+            <h4 class="opinion__heading">
+              Оржоникидзевская Ветеринарная клиника
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container services__container">
+          <div class="services__wrapper">
+            <h2 class="services__heading">Наши услуги</h2>
+
+            <div class="services__middle-holder">
+              <img
+                src="./img/arrow-left.svg"
+                alt="arrow-left"
+                class="services__arrow-img"
+                width="14"
+                height="25"
+              />
+
+              <ul class="services__list">
+                <li class="services__item">
+                  <img
+                    src="./img/doctor@1x.png"
+                    srcset="./img/doctor@1x.png 1x, ./img/doctor@2x.png 2x"
+                    alt="doctor img"
+                    class="services__img"
+                    width="75"
+                    height="75"
+                  />
+
+                  <h4 class="services__inner-heading">Первичный осмотр</h4>
+                </li>
+                <li class="services__item">
+                  <img
+                    src="./img/health-dog@1x.png"
+                    srcset="
+                      ./img/health-dog@1x.png 1x,
+                      ./img/health-dog@2x.png 2x
+                    "
+                    alt="health-dog"
+                    class="services__img"
+                    width="75"
+                    height="75"
+                  />
+
+                  <h4 class="services__inner-heading">Первичный осмотр</h4>
+                </li>
+                <li class="services__item">
+                  <img
+                    src="./img/xirurgiya@1x.png"
+                    srcset="
+                      ./img/xirurgiya@1x.png 1x,
+                      ./img/xirurgiya@2x.png 2x
+                    "
+                    alt="xirurgiya"
+                    class="services__img"
+                    width="75"
+                    height="75"
+                  />
+
+                  <h4 class="services__inner-heading">
+                    Хирургическое вмешательство
+                  </h4>
+                </li>
+                <li class="services__item">
+                  <img
+                    src="./img/dermatology@1x.png"
+                    srcset="
+                      ./img/dermatology@1x.png 1x,
+                      ./img/dermatology@2x.png 2x
+                    "
+                    alt="dermatology"
+                    class="services__img"
+                    width="75"
+                    height="75"
+                  />
+
+                  <h4 class="services__inner-heading">Дерматология</h4>
+                </li>
+                <li class="services__item">
+                  <img
+                    src="./img/labaratory@1x.png"
+                    srcset="
+                      ./img/labaratory@1x.png 1x,
+                      ./img/labaratory@2x.png 2x
+                    "
+                    alt="labaratory"
+                    class="services__img"
+                    width="75"
+                    height="75"
+                  />
+
+                  <h4 class="services__inner-heading">
+                    Лабораторная диагностика
+                  </h4>
+                </li>
+                <li class="services__item">
+                  <img
+                    src="./img/oftalmology@1x.png"
+                    srcset="
+                      ./img/oftalmology@1x.png 1x,
+                      ./img/oftalmology@2x.png 2x
+                    "
+                    alt="oftalmology"
+                    class="services__img"
+                    width="75"
+                    height="75"
+                  />
+
+                  <h4 class="services__inner-heading">Офтальмология</h4>
+                </li>
+              </ul>
+
+              <img
+                src="./img/arrow-right.svg"
+                alt="arrow-right"
+                class="services__arrow-img"
+                width="14"
+                height="25"
+              />
+            </div>
+
+            <div class="services__bottom-holder">
+              <img
+                src="./img/cat@1x.jpg"
+                srcset="./img/cat@1x.jpg 1x, ./img/cat@2x.jpg 2x"
+                alt="cat img"
+                class="services__cat-img"
+                width="524"
+                height="329"
+              />
+
+              <div class="services__bottom__right-box">
+                <h3 class="services__bottom__right-box__heading">
+                  Первичный осмотр
+                </h3>
+
+                <p class="services__bottom__right-box__text-double">
+                  По условиям акции в нашей клинике предоставляетса безплатная
+                  услуга “Дневной стационар” которая позволяет экономить Ваше
+                  время. Вы имеете возможность оставить у нас.
+                </p>
+
+                <p class="services__bottom__right-box__text-double">
+                  По условиям акции в нашей клинике предоставляетса безплатная
+                  услуга “Дневной стационар” которая позволяет экономить Ваше
+                  время. Вы имеете возможность оставить у нас.
+                </p>
+
+                <div class="services__bottom__right__btn-holder">
+                  <button class="services__uznat__btn btn">
+                    <img
+                      src="./img/pul.svg"
+                      alt="money"
+                      class="services__uznat__btn__img"
+                      width="21"
+                      height="21"
+                    />
+                    Узнать цену
+                  </button>
+
+                  <button class="services__zapisat__btn btn">
+                    <img
+                      src="./img/notebook.svg"
+                      alt="notebook"
+                      class="services__uznat__btn__img"
+                      width="21"
+                      height="21"
+                    />
+                    Записаться на приём
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="email">
+        <div class="email__container">
+          <div class="email__wrapper">
+            <div class="email__left-box">
+              <h2 class="email__heading">Будь в курсе событий</h2>
+
+              <form action="https://echo.htmlacademy.ru/" class="email__form">
+                <input
+                  class="email__input"
+                  required
+                  type="email"
+                  placeholder="Укажите Ваш email адрес"
+                  name="email"
+                />
+
+                <button class="email__btn btn">Подписаться</button>
+              </form>
+            </div>
+
+            <img
+              src="./img/dog@1x.png"
+              srcset="./img/dog@1x.png 1x, ./img/dog@2x.png 2x"
+              alt="dog img"
+              class="email__img"
+              width="500"
+              height="430"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="articles__container container">
+          <div class="articles__wrapper">
+            <h2 class="articles__heading">Полезные статьи</h2>
+
+            <ul class="articles__list">
+              <li class="articles__item">
+                <img
+                  src="./img/ooocat@1x.jpg"
+                  srcset="./img/ooocat@1x.jpg 1x, ./img/ooocat@2x.jpg 2x"
+                  alt="cat img"
+                  class="articles__item__img" width="305" height="180"
+                />
+
+                <div class="articles__inner-box">
+                  <p class="articles__inner__date">28.08.2020</p>
+
+                  <h3 class="articles__inner__heading">
+                    Ультразвуковая чистка зубов
+                  </h3>
+
+                  <p class="articles__inner__title">
+                    Появление в доме котенка приятное и радосное событие. Но не
+                    всегда этот пушистый зверек берется от ...
+                  </p>
+
+                  <button class="header__btn">
+                    <img
+                      src="./img/paw.svg"
+                      alt="paw icon"
+                      class="header__paw-img"
+                      width="23"
+                      height="23"
+                    />
+                    Читать больше
+                  </button>
+                </div>
+              </li>
+
+              <li class="articles__item articles__item--middle">
+                <img
+                  src="./img/lang-dogs@1x.jpg"
+                  srcset="./img/lang-dogs@1x.jpg 1x, ./img/lang-dogs@2x.jpg 2x"
+                  alt="dogs img"
+                  class="articles__item__Img--middle" width="305" height="435"
+                />
+
+                <div class="articles__item--middle__inner-box">
+                  <div class="articles__big__inner__date-box">
+                    <ul class="articles__inner-inner__list">
+                      <li class="articles__inner-inner__item">#собака</li>
+                      <li class="articles__inner-inner__item">#дом</li>
+                      <li class="articles__inner-inner__item">#уход</li>
+                    </ul>
+
+                    <p class="articles__inner__date">29.08.2020</p>
+                  </div>
+                  <h3 class="articles__item--middle__heading">
+                    Перед тем как завести собаку
+                  </h3>
+  
+                  <p class="articles__item--middle__text">
+                    Появление в доме котенка приятное и радосное событие. Но не
+                    всегда этот пушистый зверек берется от заводчиков, Бивают и
+                    ситуации когда животное находят на улице и дают ему теплый
+                    дом. И первым вопросом, который возникает у новых хозяев – как
+                    определить возраст котенка. Появление в доме котенка приятное
+                    и радосное событие.
+                  </p>
+  
+                  <button class="header__btn">
+                      <img
+                        src="./img/paw.svg"
+                        alt="paw icon"
+                        class="header__paw-img"
+                        width="23"
+                        height="23"
+                      />
+                      Читать больше
+                    </button>
+                </div>
+
+              </li>
+
+              <li class="articles__item">
+                <img
+                  src="./img/doggy@1x.jpg"
+                  srcset="./img/doggy@1x.jpg 1x, ./img/doggy@2x.jpg 2x"
+                  alt="cat img"
+                  class="articles__item__img" width="305" height="180"
+                />
+
+                <div class="articles__inner-box">
+                  <p class="articles__inner__date">21.07.2020</p>
+
+                  <h3 class="articles__inner__heading">
+                    Когда привавать питомца?
+                  </h3>
+
+                  <p class="articles__inner__title">
+                    Появление в доме котенка приятное и радосное событие. Но не
+                    всегда этот пушистый зверек берется от ...
+                  </p>
+
+                  <button class="header__btn">
+                    <img
+                      src="./img/paw.svg"
+                      alt="paw icon"
+                      class="header__paw-img"
+                      width="23"
+                      height="23"
+                    />
+                    Читать больше
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__up-box">
+            <a href="./index.html" class="footer__logo__link">
+              <img
+                src="./img/vet-logo.svg"
+                alt="logo"
+                class="footer__logo__img"
+                width="158"
+                height="76"
+              />
+            </a>
+
+            <ul class="footer__nav__list--first">
+              <li class="footer__nav__item">
+                <a class="footer__navbar__Link" href="/">Главная</a>
+              </li>
+              <li class="footer__nav__item">
+                <a class="footer__navbar__Link" href="/">О Клинике</a>
+              </li>
+              <li class="footer__nav__item">
+                <a class="footer__navbar__Link" href="/">Наши Услуги</a>
+              </li>
+            </ul>
+
+            <ul class="footer__nav__list--second">
+              <li class="footer__nav__item">
+                <a class="footer__navbar__Link" href="/">Полезные Статьи</a>
+              </li>
+              <li class="footer__nav__item">
+                <a class="footer__navbar__Link" href="/">FAQ</a>
+              </li>
+              <li class="footer__nav__item">
+                <a class="footer__navbar__Link" href="/">Контакты</a>
+              </li>
+            </ul>
+
+            <div class="footer__date-box">
+              <img
+                src="./img/schedulesvg.svg"
+                alt="schedule icon"
+                class="footer__date__img"
+                width="14"
+                height="14"
+              />
+
+              <ul class="footer__schedule-list">
+                <li class="footer__schedule-item">Пн - Пт 8:00 - 18:00</li>
+                <li class="footer__schedule-item">Сб - Вс 8:00 - 14:00</li>
+              </ul>
+            </div>
+
+            <a
+              class="footer__map__link"
+              target="_blank"
+              href="https://goo.gl/maps/qVb3yCnBHhFX7qfX6"
+            >
+              <img
+                src="./img/homesvg.svg"
+                alt="home img"
+                class="footer__location-img"
+                width="14"
+                height="13"
+              />
+              г. Мариуполь, проспект Победы, 48а
+            </a>
+
+            <ul class="footer__list__tel">
+              <li class="footer__item-img">
+                <img
+                  src="./img/phonesvg.svg"
+                  alt="phone img"
+                  class="footer__phone__img"
+                  width="13"
+                  height="13"
+                />
+              </li>
+              <li >
+               <ul class="footer__nmbs">
+                <li class="footer__item-number">
+                    <a class="footer__phone__link" href="tel:+0676347574"
+                      >(067) 634 -75 - 74</a
+                    >
+                  </li>
+  
+                  <li class="footer__item-number">
+                    <a class="footer__phone__link" href="tel:+0637570131"
+                      >(0637) 57 - 01 - 31</a
+                    >
+                  </li>
+  
+                  <li class="footer__item-number">
+                    <a class="footer__phone__link" href="tel:+0982664389"
+                      >(098) 266 - 43 - 89</a
+                    >
+                  </li>
+               </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__down-box">
+            <p class="footer__policy">© 2020 example. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

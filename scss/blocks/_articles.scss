@@ -1,0 +1,105 @@
+@use './../variables';
+@use './../mixins';
+
+.articles{
+    padding-top: 256px;
+    padding-bottom: 261px;
+    &__container{
+        max-width: 1440px;
+    }
+    &__wrapper{
+        max-width:1440px;
+        @include mixins.df(column,center);
+        gap: 80px;
+    }
+    
+    &__heading{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 20px;
+        color: variables.$primary-color;
+    }
+    
+    &__list{
+        @include mixins.df(row,center);
+        justify-content: space-between;
+    }
+    
+    &__item{
+        max-width: 305px;
+        cursor: pointer;
+        
+        &:hover{
+            box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        
+        &:active{
+            box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    
+    &__item--middle{
+        max-width: 640px;
+        @include mixins.df(row,center);
+    }
+    
+    &__item__img{
+        width: 305px;
+        height: 180px;
+    }
+    
+    &__item__Img--middle{
+        width: 305px;
+        height: 435px;
+    }
+    
+    &__inner-box{
+        padding: 21px 22px 35px 30px;
+        max-width: 253px;
+        @include mixins.df(column,flex-start);
+    }
+    
+    &__item--middle__inner-box{
+        @include mixins.df(column,flex-start);
+        padding: 41px 35px 36px 31px;
+        max-width: 269px;
+    }
+    
+    &__inner__date{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 2px;
+        color: variables.$text-color;
+        align-self: flex-end;
+    }
+    
+    &__inner__heading{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+        color: #000000;
+        max-width: 182px;
+        margin-bottom: 10px;
+    }
+    
+    &__inner__title{
+        margin-bottom: 34px;
+        color: variables.$text-color;
+    }
+    
+    &__big__inner__date-box{
+        @include mixins.df(row,center);
+        justify-content: space-between
+    }
+    
+    &__inner-inner__list{
+        @include mixins.df(row,center);
+        gap: 7px;
+    }
+    
+    &__inner-inner__item{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

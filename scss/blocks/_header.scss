@@ -3,5 +3,183 @@
 
 // header
 .header{
+    // position: sticky;
+    // top: 0;
    
+
+    @include mixins.df($direction:column,$align:flex-end);
+    
+    &__wrapper-up{
+        @include mixins.df(row,center);
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+    
+    &__wrapper-up__container{
+        padding: 11px 65px 12px 258px;
+        background-color: #F9F8F8;
+        width: 100vw;
+           }
+    
+    &__map__link{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: variables.$primary-color;
+        margin-right: 106px;
+    }
+    
+    &__location-img{
+        width: 14px;
+        height: 13px;
+        margin-right: 9px;
+    }
+    
+    &__list__tel{
+        @include mixins.df(row,center);
+        gap: 9px;
+        margin-right: 98px;
+    }
+    
+    &__phone__img{
+        width: 13px;
+        height: 13px;
+    }
+    
+    &__phone__link{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: variables.$primary-color;
+        
+        &:hover{
+            color:variables.$third-color ;
+        }
+        
+        &:active{
+            opacity: 0.6;
+            color: variables.$primary-color;
+        }
+    }
+    
+    &__item-dote{
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color:variables.$third-color ;
+    }
+    
+    &__date-box{
+        @include mixins.df(row,center);
+        gap: 7px;
+    }
+    
+    &__date__img{
+        width: 14px;
+        height: 14px;
+    }
+    
+    &__schedule-list{
+        @include mixins.df(row,center);
+        gap: 17px;
+    }
+    
+    &__wrapper-down__container{
+        width: 100vw;
+        background-color: variables.$secondary-color;
+        padding: 15px 128px 19px 65px;
+       
+    }
+    
+    &__wrapper-down{
+        @include mixins.df(row,center);
+        justify-content: flex-end;
+        position: relative;
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+    
+    &__logo__link{
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        
+        &:hover{
+            opacity: 0.8;
+        }
+        
+        &:active{
+            opacity: 0.6;
+        }
+    }
+    
+    &__logo__img{
+        width: 177px;
+        height: 86px;
+    }
+    
+    &__navbar{
+        margin-right: 163px;
+    }
+    
+    &__nav__list{
+        @include mixins.df(row,center);
+        gap: 55px;
+    }
+    
+    &__fish--default{
+        width: 16px;
+        height: 16px;
+        margin-right: 12px;
+        
+    }
+    
+    &__fish--none{
+        display: none;
+    }
+    
+    &__navbar__Link{
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        color: variables.$primary-color;
+        
+        &:hover{
+            border-bottom: 5px solid #ffbd54a1;
+        }
+
+        &:active{
+            opacity: 0.6;
+        }
+    }
+    
+    &__nav__item{
+        
+        &:hover{           
+            .header__fish--none{
+                display: inline-block;
+                margin-right: 12px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    
+    &__btn{
+        @include mixins.button(0);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        color: variables.$primary-color;
+        background-color: transparent;
+    }
+    
+    &__paw-img{
+        width: 23px;
+        height: 23px;
+        margin-right: 4px;
+    }
 }
+

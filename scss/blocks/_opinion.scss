@@ -1,0 +1,68 @@
+@use './../variables';
+@use './../mixins';
+// opinion
+.opinion{
+    padding-top: 26px;
+    padding-bottom: 95px;
+    
+    &__container{
+        max-width: 1174px;
+        padding-left: 20px;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+    
+    &__wrapper{
+        padding: 20px 90px 0;
+        @include mixins.df(column,center);
+    }
+    
+    &__line{
+        width: 140px;
+        height: 0;
+        border: 1px solid #DBDBDB;
+    }
+    
+    &__title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        color: variables.$text-color;
+        padding-top: 43px;
+        margin-bottom: 35px;
+        max-width: 753px;
+        position: relative;
+        
+        &::before{
+            content: '';
+            display: inline-block;
+            position:absolute ;
+            top: 0;
+            left: -110px;
+            width: 60px;
+            height: 60px;
+            background-image: url(./../../img/pair-nail-up.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        
+        &::after{
+            @include mixins.psevda();
+            background-image: url(./../../img/pair-nail-down.png);
+            bottom: -20px;
+            right: -110px;
+        }
+    }
+    
+    &__heading{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 35px;
+        color: variables.$primary-color;
+            }
+}
